@@ -1,15 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import HomeScreen from './src/screens/HomeScreen';
+import { Provider } from "react-redux";
 
+import store from "./store";
 export default function App() {
-  const name="ankit";
+
   return (
     
-    <View style={styles.container}>
-    
+    <Provider store={store} >
+  
      <HomeScreen/>
-    </View>
+     </Provider>
   );
 }
 

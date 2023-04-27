@@ -30,11 +30,11 @@ const Services = () => {
   ];
   return (
     <View style={{padding:10}}>
-        <Text style={{fontSize:16,fontWeight:"500",marginBottom:7,textAlign:"center"}}>Services Available</Text>
+        <Text style={{fontSize:16,fontWeight:"500",marginBottom:7}}>Services Available</Text>
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             {services.map((service,index) => (
                 <Pressable style={{margin:10,backgroundColor:"white",padding:20,borderRadius:7}} key={index}>
-                    <Image source={{uri:service.image}} style={{width:60,height:60}}/>
+                    <Image source={{uri:service.image}} style={{width:70,height:70}}/>
 
                     <Text style={{textAlign:"center",marginTop:10}}>{service.name}</Text>
                 </Pressable>
