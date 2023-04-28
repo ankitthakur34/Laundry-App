@@ -2,15 +2,17 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import HomeScreen from './src/screens/HomeScreen';
 import { Provider } from "react-redux";
+import StackNavigator from './StackNavigator';
 
 import store from "./store";
+
 export default function App() {
 
   return (
     
     <Provider store={store} >
   
-     <HomeScreen/>
+    <StackNavigator/>
      </Provider>
   );
 }
